@@ -1,62 +1,87 @@
-📚 Book Management API
+# 📚 Book Management API
 
-RESTful API untuk manajemen buku dengan autentikasi JWT, dibangun menggunakan Node.js, Express, Sequelize, dan PostgreSQL.
+RESTful API untuk manajemen buku dengan autentikasi JWT, dibangun menggunakan **Node.js**, **Express**, **Sequelize**, dan **PostgreSQL**.
 
-🚀 **Fitur**
+---
 
-✅ CRUD lengkap untuk manajemen buku
-🔐 Autentikasi & Autorisasi dengan JWT
-🔍 Filter pencarian buku (title, author, year)
-✔️ Validasi input yang ketat
-📝 Custom middleware untuk logging
-🗄️ PostgreSQL database dengan Sequelize ORM
-🏗️ Struktur folder modular dan clean architecture
+## 🚀 Fitur
 
-📋 **Prasyarat**
+- ✅ CRUD lengkap untuk manajemen buku  
+- 🔐 Autentikasi & Autorisasi dengan JWT  
+- 🔍 Filter pencarian buku (title, author, year)  
+- ✔️ Validasi input yang ketat  
+- 📝 Custom middleware untuk logging  
+- 🗄️ Database PostgreSQL dengan Sequelize ORM  
+- 🏗️ Struktur folder modular dan clean architecture  
 
-Pastikan Anda sudah menginstall:
+---
 
-Node.js (v14 atau lebih baru)
-PostgreSQL (v12 atau lebih baru)
-npm atau yarn
+## 📋 Prasyarat
 
-🛠️ **Instalasi**
-1. Clone Repository
-2. git clone <repository-url>
+Pastikan Anda sudah menginstal:
+
+- [Node.js](https://nodejs.org/) (v14 atau lebih baru)  
+- [PostgreSQL](https://www.postgresql.org/) (v12 atau lebih baru)  
+- npm atau yarn
+
+---
+
+## 🛠️ Instalasi
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/aldosuryak/book-management-api.git
 cd book-management-api
-3. Install Dependencies
-npm install
+```
 
-**Setup Database PostgreSQL**
-   
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+atau 
+
+```bash
+yarn install
+```
+
+### 3️⃣ Setup Database PostgreSQL
+
 Buka PostgreSQL dan buat database baru:
-sqlCREATE DATABASE book_management;
-Atau via terminal:
-bashpsql -U postgres
+```sql
+CREATE DATABASE book_management;
+```
+
+Atau melalui terminal:
+```bash
+psql -U postgres
 CREATE DATABASE book_management;
 \q
+```
 
-**Konfigurasi Environment Variables**
-   
-Buat file .env di root folder:
-env# Server Configuration
-PORT=4000
-NODE_ENV=development
+### 4️⃣ Konfigurasi Environment Variables
 
-# Database Configuration
-DB_HOST=localhost
-DB_USER=postgres
-DB_PASSWORD=your_password_here
-DB_NAME=book_management
-DB_PORT=5432
+Buat file .env berdasarkan contoh yang sudah disediakan:
+```bash
+cp .env.example .env
+```
+Kemudian buka file .env dan sesuaikan nilainya dengan konfigurasi lokal Anda.
 
-# JWT Configuration
-JWT_SECRET=your_super_secret_jwt_key_change_this_in_production
+### 🎯 Menjalankan Aplikasi
 
-
-🎯 **Menjalankan Aplikasi**
-Development Mode:
+Development Mode
+```bash
 npm run dev
+```
+
 Production Mode
+```bash
 npm start
-Server akan berjalan di: http://localhost:4000
+```
+
+Server akan berjalan di:
+
+http://localhost:4000
+

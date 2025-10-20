@@ -69,7 +69,9 @@ cp .env.example .env
 ```
 Kemudian buka file .env dan sesuaikan nilainya dengan konfigurasi lokal Anda.
 
-### 🎯 Menjalankan Aplikasi
+---
+
+## 🎯 Menjalankan Aplikasi
 
 Development Mode
 ```bash

@@ -13,31 +13,21 @@ RESTful API untuk manajemen buku dengan autentikasi JWT, dibangun menggunakan No
 🏗️ Struktur folder modular dan clean architecture
 
 📋 **Prasyarat**
+
 Pastikan Anda sudah menginstall:
 
 Node.js (v14 atau lebih baru)
 PostgreSQL (v12 atau lebih baru)
 npm atau yarn
 
-🛠️ Instalasi
+🛠️ **Instalasi**
 1. Clone Repository
 2. git clone <repository-url>
 cd book-management-api
 3. Install Dependencies
 npm install
 
-Dependencies yang akan terinstall:
-
-express - Web framework
-sequelize - ORM untuk PostgreSQL
-pg & pg-hstore - PostgreSQL driver
-jsonwebtoken - JWT authentication
-bcryptjs - Password hashing
-express-validator - Input validation
-dotenv - Environment variables
-nodemon - Development auto-reload (dev dependency)
-
-3. Setup Database PostgreSQL
+**Setup Database PostgreSQL**
    
 Buka PostgreSQL dan buat database baru:
 sqlCREATE DATABASE book_management;
@@ -46,7 +36,7 @@ bashpsql -U postgres
 CREATE DATABASE book_management;
 \q
 
-4. Konfigurasi Environment Variables
+**Konfigurasi Environment Variables**
    
 Buat file .env di root folder:
 env# Server Configuration
@@ -64,7 +54,7 @@ DB_PORT=5432
 JWT_SECRET=your_super_secret_jwt_key_change_this_in_production
 
 
-🎯 Menjalankan Aplikasi
+🎯 **Menjalankan Aplikasi**
 Development Mode:
 npm run dev
 Production Mode
